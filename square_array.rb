@@ -1,8 +1,6 @@
 def square_array(array)
   new_array=[]
   
-  array.collect do |number|
-    new_array << number + "**2"
-  end 
+  array.collect {|number| number + "**2"}
     return new_array
 end
